@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        echo "github.event.workflow_dispatch.head.sha: ${{ github.event.workflow_dispatch.head.sha }}"
-        echo "github.event.workflow_dispatch.head_sha: ${{ github.event.workflow_dispatch.head_sha }}"
-        echo "github.event.workflow_dispatch: ${{ github.event.workflow_dispatch }}"
+        echo "github.event.workflow_run.head.sha: ${{ github.event.workflow_run.head.sha }}"
+        echo "github.event.workflow_run.head_sha: ${{ github.event.workflow_run.head_sha }}"
+        echo "github.event.workflow_run: ${{ github.event.workflow_run }}"
