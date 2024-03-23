@@ -1,0 +1,11 @@
+on: 
+  workflow_dispatch
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "github.event.workflow_dispatch.head.sha: ${{ github.event.workflow_dispatch.head.sha }}"
+        echo "github.event.workflow_dispatch.head_sha: ${{ github.event.workflow_dispatch.head_sha }}"
+        echo "github.event.workflow_dispatch: ${{ github.event.workflow_dispatch }}"
