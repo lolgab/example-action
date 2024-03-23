@@ -11,3 +11,7 @@ jobs:
         echo "github.event.workflow_run.head.sha: ${{ github.event.workflow_run.head.sha }}"
         echo "github.event.workflow_run.head_sha: ${{ github.event.workflow_run.head_sha }}"
         echo "github.event.workflow_run: ${{ github.event.workflow_run }}"
+        echo "GITHUB_EVENT_PATH: $GITHUB_EVENT_PATH"
+        echo "****"
+        cat $GITHUB_EVENT_PATH
+        echo "****"
